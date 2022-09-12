@@ -56,6 +56,11 @@ $(document).ready(function () {
     let judge = "合格";
     // 入力したそれぞれの教科のうち、1つでも60点よりも低い点数があった場合、変数「judge」に"不合格"を再代入する処理を記述する。
     // ヒント：配列の繰り返し処理について調べてみましょう。
+    for (let i = 0; i < number; i++) {
+      if (subject_points[i]<60)
+      judge="不合格"
+      break;
+    }
     return judge;
   };
   // 最終的なジャッジのロジックを作ります。
